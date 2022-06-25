@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.banner-container{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom right, rgb(44, 44, 63), rgb(45, 32, 83));
+    /*background-image: url('../public/img/Escritorios-modernos-01.png');*/
+}
+.menu{
+    position: absolute;
+    top: 0px;
+    padding-top: 5px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-menu{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    padding-top: 5px;
+    display: flex;
+}
+.content-menu nav ul li{
+    text-decoration: none;
+    padding: 0px 20px 0px 20px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.content-menu nav ul li a:hover{
+    background-color: white;
+}
+.first-details{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-firstinfo{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-firstinfo .text-div{
+    position: absolute;
+    width: 50%;
+    left: 0;
+    padding: 10px;
+}
+.text-div{
+    z-index: 2 !important;
+    padding: 0px 10px 0px 10px !important;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.text-div h1{
+    color: white;
+    font-size: 65px;
+}
+.text-div p{
+    color: rgb(175, 174, 174);
+    font-size: 25px;
+    text-align: justify;
+}
+
+.content-firstinfo .img-div{
+    position: absolute;
+    width: 50%;
+    right: 0;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.info-landing{  
+    width: 100%;
+    height: 100%;
+    margin-top: -40px;
+}
+.content-landing{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+.container{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-size: 4em;
+    filter: contrast(15);
+}
+.word{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: switch 8s infinite ease-in-out;
+    min-width: 100%;
+    margin: auto;
+}
+.word:nth-child(1){
+    animation-delay: -7s;
+}
+.word:nth-child(2){
+    animation-delay: -6s;
+}
+.word:nth-child(3){
+    animation-delay: -5s;
+}
+@keyframes switch{
+    0%,
+    5%,
+    2100%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+    50%,
+    80%{
+        filter:blur(400px);
+        opacity: 0;
+    }
+}
